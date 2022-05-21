@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tittle{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tittle .underline{
+    width: 100px;
+    height: 6px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: red;
+}
+.com-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.img img{
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    border-right: 3px solid red;
+    border-radius: 50%;
+}
+.name{
+    color: white;
+    margin-top: 12px;
+}
+.job{
+    color: rgb(255, 25, 0);
+}
+.text{
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    width: 85%;
+    line-height: 20px;
+}
+.buttons{
+    margin: 30px;
+    color: white;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons i{
+    padding: 10px;
+    color: white;
+    border-radius: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 15px;
+}
+.buttons i:hover{
+    color: red;
+}
+.sub-btn{
+    margin-bottom: 35px;
+}
+#btn{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: white;
+    color: red;
+    text-decoration: underline;
+}
