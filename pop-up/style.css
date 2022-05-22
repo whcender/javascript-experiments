@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    border: 1px solid black;    
+
+    border-radius: 10px;
+}
+.box-header{
+    margin-bottom: 140px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box-btn{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.box-btn:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+.box-btn a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.box-btn a:hover{
+    color: #161616;
+}
+.pop-up{
+    position: fixed;
+    z-index: -1;
+    /* we will change it later */
+}
+.pop-up-active{
+    z-index: 1;
+}
+.pop-up-box{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.pop-up-img img{
+    margin-right: 400px;
+    width: 200px;
+}
+.pop-up-p{
+    margin: 100px;
+}
+.pop-up-p p{
+    font-size: 35px;
+    background: -webkit-linear-gradient(rgb(240, 0, 164), rgb(0, 255, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.close-pop-up p{
+    position: relative;
+    font-size: 30px;
+    cursor: pointer;
+}
+.close-pop-up{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+.close-pop-up p:hover{
+    color: red;
+    font-size: 34px;
+}
+.footer{
+    position: fixed;
+    bottom: 10px;
+    color: black;
+}
+.footer p a{
+    color: red;
+    text-decoration: none;
+}
+.footer p a:hover{
+    color: rgb(185, 45, 45);
+}
