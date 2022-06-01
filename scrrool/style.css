@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main{
+    background-image: url("/scrrool/john-towner-JgOeRuGD_Y4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+    transition: 0.1s;
+}
+
+.logo img {
+    width: 100px;
+}
+/* for disable ul */
+.ul ul {
+    display: flex;
+}
+
+.ul li {
+    list-style: none;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ul a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ul a:hover {
+    color: red;
+}
+/* upper-btn */
+.upper{
+    display: none;
+}
+.upper i{
+    font-size: 30px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+.upper i:hover{
+    font-size: 35px;
+}
+/* hamburger menu none  */
+.menu-icon {
+    display: none;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+/* ghost-nav-start */
+
+.nav{
+    width: 100%;
+    background-color: white;
+    max-width: 1600px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.active{
+    height: 170px;
+    color: black;
+}
+.active-nav{
+    position: fixed;
+    top: 100px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.605);    
+}
+.nav ul{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+.nav ul li{
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+}
+.nav ul li a:hover{
+    color: red;
+}
+
+/* nav-end */
+.main-text{
+    height: 460px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 700;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-head{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.main-text-p{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+.main-text-btn{
+    margin-top: 40px;
+    font-size: 17px;
+}
+.main-text-btn a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 2px solid white;
+    letter-spacing: 2px;
+}
+.main-text-btn a:hover{
+    color: red;
+    background-color: white;
+    border-radius: 10px;
+}
+.about{
+    height: 100vh;
+}
+.about-header{
+    text-align: center;
+    font-size: 50px;
+}
+.about-header span{
+    color: red;
+}
+.services{
+    height: 100vh;
+    background-color: #161616;
+    color: white;
+}
+.services-header{
+    text-align: center;
+    font-size: 50px;
+}
+.services-header span{
+    color: red;
+}
+.tour{
+    height: 100vh;
+}
+.tour-header{
+    text-align: center;
+    font-size: 50px;
+}
+.tour-header span{
+    color: red;
+}
+footer{
+    background-color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+footer a{
+    color: red;
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(185, 6, 6);
+}
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 1600px;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px 67px;
+}
+.fixed-nav ul li a{
+    color: black;
+    background-color: transparent;
+}
+.fixed-nav .menu-icon{
+    color: black;
+}
+.show-btn{
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+
+
+
+
+/* media query */
+
+
+
+@media screen and (max-width: 700px){
+    .menu-icon{
+        display: block;
+    }
+    .ul{
+        display: none;
+    }
+    .header{
+        padding: 20px;
+        background-color: white;
+    }
+    .menu-icon{
+        color: black;
+    }
+    .text-head{
+        font-size: 40px;
+    }
+}
