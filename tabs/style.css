@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+.cow{
+    display: flex;
+    justify-content: center;
+}
+.img img{
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.text-section{
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;  
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.btns a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(206, 204, 204);
+    padding: 20px;
+    width: 100%;
+    border-top-left-radius: 20px;
+}
+#vbtn{
+    border-top-left-radius: 0;
+}
+#gbtn{
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+
+}
+.text{
+    background-color: white;
+    height: 250px;
+    padding: 35px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.text .text-header{
+    margin-bottom: 5px;
+}
+.h-h{
+    display: none;
+}
+#hbtn.active{
+    background-color: white;
+}
+#vbtn.active{
+    background-color: white;
+}
+#gbtn.active{
+    background-color: white;
+}
+
+/* footer */
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    color: white;
+}
+footer span a{
+    color: red;
+    text-decoration: none;
+}
+footer span a:hover{
+    color: rgb(206, 8, 8);
+}
+
+/* responsive */
+
+
+@media screen and (max-width: 700px){
+    .cow{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-section{
+        margin-top: 20px;
+        width: 500px;
+    }
+    .text{
+        height: 220px;
+        text-align: center;
+    }
+}
