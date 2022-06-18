@@ -30,9 +30,6 @@ let gun = Math.floor(equal / day)
 let saat = Math.floor(equal % (1000 * 60 * 60 * 24) / hour)
 let dakika = Math.floor(equal % (1000 * 60 * 60) / min)
 let saniye = Math.floor(equal % (1000 * 60 * 60) % (1000 * 60) / 1000)
-    if (equal > 0) {
-        coundown.innerHTML = `${gun} gün ${saat} saat ${dakika} dakika ${saniye} saniye`
-    }
     if (equal <= 0) {
         coundown.innerHTML = `süre doldu`
     }
@@ -45,6 +42,7 @@ let saniye = Math.floor(equal % (1000 * 60 * 60) % (1000 * 60) / 1000)
     if (saat < 10) {
         saat = `0${saat}`
     }
+    coundown.innerHTML = `${gun} gün ${saat} saat ${dakika} dakika ${saniye} saniye`
     
 }
 
